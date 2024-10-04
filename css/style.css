@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+nav ul li a.disabled {
+    color: gray;
+    cursor: not-allowed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #343a40;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Image Styles */
+img {
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    text-align: left;
+}
+
+thead.table-dark {
+    background-color: #343a40;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px 0;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+}
+
+thead th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tbody td {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #e6e6e6; 
+}
+
+tbody tr:hover td {
+    background-color: #d0e0f0;
+}
+<style>
+.small-img {
+  width: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.small-img:active {
+  transform: scale(2); /* Duplicará el tamaño de la imagen cuando se haga clic */
+}
+</style>
